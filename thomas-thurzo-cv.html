@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas Thurzo – Software Engineer</title>
+  <link rel="stylesheet" href="thomas-thurzo-cv.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a class="nav-brand" href="#hero">Thomas Thurzo</a>
+    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#ueber-mich">Profil</a></li>
+      <li><a href="#erfahrung">Erfahrung</a></li>
+      <li><a href="#ausbildung">Ausbildung</a></li>
+      <li><a href="#kenntnisse">Skills</a></li>
+      <li><a href="#sprachen">Sprachen</a></li>
+      <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Software Engineer &amp; IT-Spezialist</div>
+        <h1>Thomas<br><span>Thurzo</span></h1>
+        <p class="hero-sub">Java-Entwickler, MSc Wirtschaftsinformatik, leidenschaftlich für sauberen Code und moderne
+          Technologien.</p>
+        <div class="hero-pills">
+          <span class="hero-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Berndorf, Niederösterreich
+          </span>
+          <span class="hero-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            MSc Wirtschaftsinformatik
+          </span>
+          <span class="hero-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+            Java · Python · PL/1 · C#
+          </span>
+        </div>
+        <div class="hero-btns">
+          <a class="btn btn-primary" href="#kontakt">Kontakt aufnehmen</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/thomas-thurzo-7b79a9123/" target="_blank"
+            rel="noopener">LinkedIn →</a>
+        </div>
+      </div>
+
+      <!-- Hero Bild rechts -->
+      <div class="hero-img-panel">
+        <div class="hero-img-deco"></div>
+        <div class="hero-img-frame">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80&fit=crop"
+            alt="Code auf einem Bildschirm" loading="lazy" />
+          <div class="hero-img-badge">
+            <div class="hero-img-badge-dot"></div>
+            <div>
+              <div class="hero-img-badge-text">Java Entwickler</div>
+              <div class="hero-img-badge-sub">Generali Versicherung · 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /hero-inner -->
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="ueber-mich">
+    <div class="container">
+      <div class="sec-label">Über mich</div>
+      <h2 class="sec-title">Mein Profil</h2>
+      <p class="sec-desc">Vom erfolgreichen Unternehmer zum Software Engineer — ein ungewöhnlicher, aber konsequenter
+        Karriereweg.</p>
+
+      <div class="bento">
+        <!-- Bild: Workspace -->
+        <div class="bento-card bento-img b-col-12" style="height:240px">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&fit=crop"
+            alt="Coding Workspace" />
+          <div class="bento-img-overlay"></div>
+          <div class="bento-img-label">📍 Berndorf, Niederösterreich</div>
+        </div>
+
+        <!-- Stat: Jahre Erfahrung -->
+        <div class="bento-card b-col-4">
+          <div class="bento-label">Berufserfahrung</div>
+          <div class="bento-big">30+<span>Jahre im Berufsleben</span></div>
+        </div>
+
+        <!-- Persönliche Daten -->
+        <div class="bento-card b-col-8">
+          <div class="bento-label">Persönliche Daten</div>
+          <div class="info-list" style="margin-top:.75rem">
+            <div class="info-row"><span class="k">Geburtsdatum</span><span class="v">09. September 1973</span></div>
+            <div class="info-row"><span class="k">Wohnort</span><span class="v">Griesfeldstr. 53, 2560 Berndorf,
+                NÖ</span></div>
+            <div class="info-row"><span class="k">Familienstand</span><span class="v">Verheiratet · 2 Kinder</span>
+            </div>
+            <div class="info-row"><span class="k">Nationalität</span><span class="v">🇦🇹 Österreich</span></div>
+            <div class="info-row"><span class="k">Führerschein</span><span class="v">Klasse A, B</span></div>
+          </div>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="bento-card b-col-5">
+          <div class="bento-label">Kontakt</div>
+          <div class="info-list" style="margin-top:.75rem">
+            <div class="info-row"><span class="k">E-Mail</span><span class="v"><a
+                  href="mailto:thomas.thurzo@gmail.com">thomas.thurzo@gmail.com</a></span></div>
+            <div class="info-row"><span class="k">Website</span><span class="v"><a href="http://www.thomas-thurzo.com"
+                  target="_blank">thomas-thurzo.com</a></span></div>
+            <div class="info-row"><span class="k">LinkedIn</span><span class="v"><a
+                  href="https://www.linkedin.com/in/thomas-thurzo-7b79a9123/" target="_blank">Profil ansehen</a></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="bento-card b-col-7">
+          <div class="bento-label">Auf einen Blick</div>
+          <div class="stat-grid" style="margin-top:.75rem">
+            <div class="stat-item">
+              <div class="stat-num">2</div>
+              <div class="stat-label">Hochschulabschlüsse</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">11</div>
+              <div class="stat-label">Programmiersprachen</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Sprachen</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">20+</div>
+              <div class="stat-label">Jahre als Unternehmer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- BERUFSERFAHRUNG -->
+  <section id="erfahrung">
+    <div class="container">
+      <div class="img-banner">
+        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1400&q=80&fit=crop"
+          alt="Software Entwicklung" loading="lazy" />
+        <div class="img-banner-overlay"></div>
+        <div class="img-banner-content">
+          <div class="sec-label">Karriere</div>
+          <h2>Berufserfahrung</h2>
+        </div>
+      </div>
+      <p class="sec-desc">Von der Selbstständigkeit über IT-Beratung bis zur modernen Softwareentwicklung.</p>
+
+      <div class="tl-wrap">
+        <div class="tl-item current">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">Java Entwickler <span class="badge-now">Aktuell</span></div>
+                <div class="tl-org">Generali Versicherung</div>
+              </div>
+              <div class="tl-date">2024 – heute</div>
+            </div>
+            <div class="tl-desc">Entwicklung und Wartung von Java-basierten Unternehmensapplikationen im
+              Versicherungsumfeld.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">Backend Entwickler · PL/1 &amp; Mainframe</div>
+                <div class="tl-org">Wüstenrot Technology GmbH</div>
+              </div>
+              <div class="tl-date">2023</div>
+            </div>
+            <div class="tl-desc">Backend-Entwicklung mit PL/1 in der Mainframe-Umgebung. Abteilung Finance – Daten und
+              Künstliche Intelligenz.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">EDV Berater</div>
+                <div class="tl-org">Steuerberatungskanzlei Dr. Marek</div>
+              </div>
+              <div class="tl-date">2015 – 2022</div>
+            </div>
+            <div class="tl-desc">Technische IT-Beratung und Betreuung der EDV-Infrastruktur einer
+              Steuerberatungskanzlei.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">Selbstständiger Unternehmer</div>
+                <div class="tl-org">Hotellerie · Immobilien · Einzelhandel</div>
+              </div>
+              <div class="tl-date">1995 – 2015</div>
+            </div>
+            <div class="tl-desc">Über 20 Jahre erfolgreiche Selbstständigkeit in mehreren Branchen. Aufbau, Führung und
+              2015 erfolgreicher Verkauf aller Unternehmen.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">Einzelhandelskaufmann</div>
+                <div class="tl-org">Einzelhandel</div>
+              </div>
+              <div class="tl-date">1991 – 1995</div>
+            </div>
+            <div class="tl-desc">Berufseinstieg nach Abschluss der Fachausbildung zum Datenverarbeitungskaufmann.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- AUSBILDUNG -->
+  <section id="ausbildung">
+    <div class="container">
+      <div class="sec-label">Bildung</div>
+      <h2 class="sec-title">Ausbildung</h2>
+      <p class="sec-desc">Klassische Schulbildung, erfolgreicher zweiter Bildungsweg mit zwei akademischen Abschlüssen.
+      </p>
+
+      <div class="tl-wrap" style="margin-bottom:3rem">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">Master of Science – Wirtschaftsinformatik</div>
+                <div class="tl-org">IU International University of Applied Sciences</div>
+              </div>
+              <div class="tl-date">2021 – 2023</div>
+            </div>
+            <div class="tl-desc">120 ECTS · Abschluss: 11. April 2023</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">Bachelor of Science – Informatik</div>
+                <div class="tl-org">IU International University of Applied Sciences</div>
+              </div>
+              <div class="tl-date">2019 – 2021</div>
+            </div>
+            <div class="tl-desc">180 ECTS · Abschluss: 23. Dezember 2021</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">Datenverarbeitungskaufmann</div>
+                <div class="tl-org">Schule für Datenverarbeitungskaufleute Wien, Salmgasse</div>
+              </div>
+              <div class="tl-date">1989 – 1991</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">HTL für EDV</div>
+                <div class="tl-org">HTL Wien Spengergasse</div>
+              </div>
+              <div class="tl-date">1988 – 1989</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-title">Bundesgymnasium (AHS)</div>
+                <div class="tl-org">BG Wien Kundmanngasse</div>
+              </div>
+              <div class="tl-date">1984 – 1988</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Abschlussarbeiten -->
+      <div class="sec-label">Akademische Arbeiten</div>
+      <h3 style="font-size:1.3rem;font-weight:700;color:#fff;letter-spacing:-.02em;margin-bottom:1rem">Abschlussarbeiten
+      </h3>
+      <div class="thesis-grid">
+        <div class="thesis-card">
+          <div class="thesis-type">🎓 Masterarbeit · 2023</div>
+          <div class="thesis-title">„Machine Learning Algorithmen zur Kursprognose in den Aktien- und Rohstoffmärkten."
+          </div>
+          <div class="thesis-sub">MSc Wirtschaftsinformatik · IU University</div>
+        </div>
+        <div class="thesis-card">
+          <div class="thesis-type">🎓 Bachelorarbeit · 2021</div>
+          <div class="thesis-title">„Wie Responsive ist Flutter. Eine Analyse anhand von Apps."</div>
+          <div class="thesis-sub">BSc Informatik · IU University</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="kenntnisse">
+    <div class="container">
+      <div class="img-banner">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1400&q=80&fit=crop" alt="Technologie"
+          loading="lazy" />
+        <div class="img-banner-overlay"></div>
+        <div class="img-banner-content">
+          <div class="sec-label">Technologien</div>
+          <h2>IT-Kenntnisse</h2>
+        </div>
+      </div>
+      <p class="sec-desc">Breites technisches Spektrum von Mainframe-Entwicklung bis Data Science und Mobile.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <div class="skill-icon ic-blue">💻</div>
+            Programmiersprachen
+          </div>
+          <div class="tags">
+            <span class="tag hi">Java</span>
+            <span class="tag hi">Python</span>
+            <span class="tag hi">C#</span>
+            <span class="tag">PL/1</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML &amp; CSS</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Dart</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Prolog</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <div class="skill-icon ic-purple">🧰</div>
+            Frameworks
+          </div>
+          <div class="tags">
+            <span class="tag hi">Flutter</span>
+            <span class="tag">.NET Framework</span>
+            <span class="tag">Java RCP</span>
+            <span class="tag">Java Server Faces</span>
+            <span class="tag">SWT/JFace</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">jQuery</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Tkinter</span>
+            <span class="tag">Android Studio</span>
+            <span class="tag">RStudio</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <div class="skill-icon ic-cyan">🗄️</div>
+            Datenbanken
+          </div>
+          <div class="tags">
+            <span class="tag hi">DB2</span>
+            <span class="tag hi">MySQL</span>
+            <span class="tag hi">PostgreSQL</span>
+            <span class="tag hi">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <div class="skill-icon ic-green">🧠</div>
+            Fachwissen
+          </div>
+          <div class="tags">
+            <span class="tag hi">Data Science</span>
+            <span class="tag hi">Machine Learning</span>
+            <span class="tag">Softwareentwicklung</span>
+            <span class="tag">Requirements Engineering</span>
+            <span class="tag">Web-Entwicklung</span>
+            <span class="tag">App-Entwicklung</span>
+            <span class="tag">Mainframe-Entwicklung</span>
+            <span class="tag">Relationale Datenbanken</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <div class="skill-icon ic-orange">📜</div>
+            Zertifizierungen
+          </div>
+          <div class="tags">
+            <span class="tag hi">BSc Informatik (IU)</span>
+            <span class="tag hi">MSc Wirtschaftsinformatik (IU)</span>
+            <span class="tag">ILS – C# Entwickler</span>
+            <span class="tag">SGD – Webentwickler</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SPRACHEN -->
+  <section id="sprachen">
+    <div class="container">
+      <div class="sec-label">Kommunikation</div>
+      <h2 class="sec-title">Sprachkenntnisse</h2>
+      <p class="sec-desc">Dreisprachig aufgewachsen – kommunikationsstark auf internationalem Parkett.</p>
+      <div class="lang-grid">
+        <div class="lang-card">
+          <span class="lang-flag">🇦🇹</span>
+          <div class="lang-name">Deutsch</div>
+          <div class="lang-level">Muttersprache</div>
+          <div class="lang-bar">
+            <div class="lang-fill" data-w="100"></div>
+          </div>
+        </div>
+        <div class="lang-card">
+          <span class="lang-flag">🇬🇧</span>
+          <div class="lang-name">Englisch</div>
+          <div class="lang-level">Fließend</div>
+          <div class="lang-bar">
+            <div class="lang-fill" data-w="85"></div>
+          </div>
+        </div>
+        <div class="lang-card">
+          <span class="lang-flag">🇭🇺</span>
+          <div class="lang-name">Ungarisch</div>
+          <div class="lang-level">Fließend</div>
+          <div class="lang-bar">
+            <div class="lang-fill" data-w="85"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" style="padding-bottom:0">
+    <div class="container" style="padding-bottom:5rem">
+      <div class="contact-box">
+        <div class="contact-inner">
+          <div class="sec-label" style="justify-content:center">Jetzt verbinden</div>
+          <h2>Kontakt aufnehmen</h2>
+          <p>Ich freue mich über berufliche Anfragen, Kooperationen oder einen fachlichen Austausch.</p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:thomas.thurzo@gmail.com">✉️ thomas.thurzo@gmail.com</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/thomas-thurzo-7b79a9123/" target="_blank"
+              rel="noopener">🔗 LinkedIn</a>
+            <a class="contact-link" href="http://www.thomas-thurzo.com" target="_blank" rel="noopener">🌐 Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Thomas Thurzo · Berndorf, Niederösterreich</p>
+    <div class="footer-links">
+      <a href="mailto:thomas.thurzo@gmail.com">E-Mail</a>
+      <a href="https://www.linkedin.com/in/thomas-thurzo-7b79a9123/" target="_blank">LinkedIn</a>
+      <a href="http://www.thomas-thurzo.com" target="_blank">Website</a>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll-Animationen
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('vis');
+        e.target.querySelectorAll('.lang-fill[data-w]').forEach(b => {
+          b.style.width = b.dataset.w + '%';
+        });
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.tl-item, .skill-card, .lang-card').forEach(el => io.observe(el));
+
+    // Sprachbalken beim Scrollen
+    const langIO = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting)
+          e.target.querySelectorAll('.lang-fill').forEach(b => { b.style.width = b.dataset.w + '%'; });
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('#sprachen').forEach(s => langIO.observe(s));
+
+    // Active Nav
+    const sections = document.querySelectorAll('section[id]');
+    const links = document.querySelectorAll('.nav-links a');
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        links.forEach(a => a.classList.remove('active'));
+        const a = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+        if (a) a.classList.add('active');
+      });
+    }, { rootMargin: '-40% 0px -55%' });
+    sections.forEach(s => spy.observe(s));
+
+    // Mobile Menü schließen
+    document.querySelectorAll('.nav-links a').forEach(a =>
+      a.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'))
+    );
+  </script>
+</body>
+
+</html>
